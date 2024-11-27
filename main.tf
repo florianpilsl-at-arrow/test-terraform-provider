@@ -41,8 +41,7 @@ locals {
 ## ---------------------------------------------------------------------------------------------------------------------
 
 module "backstage_techdocs_storage" {
-  source  = "pes-pbe-docker-dev.vegistry.vg.vector.int/pes-pbe-terraform-dev__SDx/terraform-azure-module-storage/azure"
-  version = "0.0.1"
+  source  = "github.com/florianpilsl-at-arrow/terraform-storage"
 
   resource_group_name    = var.resource_group_name
   storage_account_name   = "fpilslstorageaccount"
